@@ -18,7 +18,7 @@ export class CartService {
   removeFromCart(foodId:number):void{
     this.cart.items = this.cart.items.filter(item=> item.food.id != foodId)
 
-  }
+  } 
   changeQuantity(quantity:number, foodId:number ){
     let CartItem = this.cart.items.find(item => item.food.id === foodId)
     if(!CartItem) return;

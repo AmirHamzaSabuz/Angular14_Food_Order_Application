@@ -10,6 +10,6 @@ export class CartItem{
     food:Foods;
     quantity:number = 1;
     get price(): number{
-        return this.food.price = this.quantity;
+        return this.food.price * this.quantity;
     }
 }
